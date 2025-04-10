@@ -1,7 +1,7 @@
 # Core Packages
 streamlit
 pandas
-numpy
+numpy<2.0
 joblib
 tqdm
 
@@ -9,13 +9,20 @@ tqdm
 scikit-learn
 scipy
 
-# NLP & Transformers
+# NLP & Text Processing
 spacy
 transformers
-torch==2.2.2
 
-# Hugging Face Model Download
+# Deep Learning
+torch
+# If you want to force a CPU-only version (optional):
+# torch==2.2.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+
+# Hugging Face Hub (for model downloads)
 huggingface_hub
+
+# Optional: Needed for faster downloads from Hugging Face Xet Storage
+hf_xet
 
 # NOTE: Install spaCy model separately
 # Run this manually after setting up: 
