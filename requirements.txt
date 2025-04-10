@@ -13,8 +13,7 @@ scipy
 spacy
 transformers
 
-# Deep Learning (CPU-only for Streamlit Cloud)
-torch==2.2.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+torch
 
 # Hugging Face Hub (for model downloads)
 huggingface_hub
