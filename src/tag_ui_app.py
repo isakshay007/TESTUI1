@@ -1,7 +1,6 @@
 import streamlit as st
 import joblib
 import os
-import torch
 import pickle
 import numpy as np
 from transformers import DistilBertTokenizer, DistilBertModel
@@ -10,6 +9,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 from torch import nn
 from huggingface_hub import hf_hub_download
 from hmm import HMM_Tagger
+import types
+import torch
+
+if not hasattr(torch.classes, '__path__'):
+    torch.classes.__path__ = types.SimpleNamespace(_path=[])
 
 # ========= MODEL CLASSES =========
 class MiniTagTransformer(nn.Module):
