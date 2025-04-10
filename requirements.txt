@@ -13,15 +13,13 @@ scipy
 spacy
 transformers
 
-# Deep Learning
-torch
-# If you want to force a CPU-only version (optional):
-# torch==2.2.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+# Deep Learning (CPU-only for Streamlit Cloud)
+torch==2.2.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu
 
 # Hugging Face Hub (for model downloads)
 huggingface_hub
 
-# Optional: Needed for faster downloads from Hugging Face Xet Storage
+# Optional: Faster downloads via Hugging Face Xet Storage
 hf_xet
 
 # NOTE: Install spaCy model separately
