@@ -9,13 +9,13 @@ tqdm
 scikit-learn
 scipy
 
-# NLP & Text Processing
+# NLP & Transformers
 spacy
 transformers
+torch==2.2.2
 
-# Deep Learning
-torch==2.0.1+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
+# Hugging Face Model Download
+huggingface_hub
 
 # NOTE: Install spaCy model separately
 # Run this manually after setting up: 
