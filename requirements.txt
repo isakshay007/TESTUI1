@@ -1,0 +1,24 @@
+# Core Packages
+streamlit
+pandas
+numpy
+joblib
+tqdm
+
+# Machine Learning
+scikit-learn
+scipy
+
+# NLP & Text Processing
+spacy
+transformers
+
+# Deep Learning
+torch==2.0.1+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# NOTE: Install spaCy model separately
+# Run this manually after setting up: 
+# python -m spacy download en_core_web_md
+# OR use direct download (if needed):
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0.tar.gz
