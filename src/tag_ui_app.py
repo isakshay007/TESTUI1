@@ -29,11 +29,9 @@ def preprocess(text):
 
 @st.cache_resource(show_spinner=False)
 def load_models():
-    # Download from Hugging Face Hub
     model_path = hf_hub_download(repo_id="iakshay777/stackoverflow-tag-model", filename="trained_model.pt", repo_type="model")
     mlb_path = hf_hub_download(repo_id="iakshay777/stackoverflow-tag-model", filename="mlb.pkl", repo_type="model")
 
-    # Load local models
     ml_model = joblib.load("models/tagging_model.pkl")
     mlb_ml = joblib.load("models/tagging_mlb.pkl")
 
